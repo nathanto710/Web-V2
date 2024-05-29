@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immerseum Nights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>IMMERSEUM NIGHTS</h1>
+        <p>2024 Aug & Sep | Friday Nights | Powerhouse Museum</p>
+        <button onclick="document.getElementById('registration').scrollIntoView();">Register</button>
+        <p>Castle Hill<br>5 – 9PM</p>
+    </header>
+
+    <div class="content-container">
+        <section id="first-night">
+            <h2>1st Night: First Nation</h2>
+            <h3>Artist Talks</h3>
+            <p><strong>Guest speakers:</strong><br>Kay Lee Williams<br>Lucy Simpsons</p>
+            <p>The topic will be cultural preservation where Kay and Lucy share their story with international audiences. During the session, students can ask questions and engage in conversation with artists and curators about the museum's First Nations collection.</p>
+            <div class="speakers">
+                <div class="speaker">
+                    <img src="kay-lee.png" alt="Kay Lee Williams">
+                    <p>Kay Lee Williams</p>
+                </div>
+                <div class="speaker">
+                    <img src="lucy.png" alt="Lucy Simpsons">
+                    <p>Lucy Simpsons</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-to-expect">
+            <h2>What to Expect</h2>
+            <ul>
+                <li><i class="fas fa-comments icon"></i>Engaging Artist Talks</li>
+                <li><i class="fas fa-paint-brush icon"></i>Interactive Workshops</li>
+                <li><i class="fas fa-handshake icon"></i>Networking and Socialising</li>
+                <li><i class="fas fa-compass icon"></i>Immersive Experiences</li>
+                <li><i class="fas fa-music icon"></i>Live Music</li>
+                <li><i class="fas fa-drumstick-bite icon"></i>Food and Beverage</li>
+            </ul>
+        </section>
+
+        <section id="registration">
+            <h2>Registration</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="interests">Interests:</label>
+                <input type="text" id="interests" name="interests" placeholder="E.g. workshops, talks">
+                
+                <label for="workshop">Choose a Workshop:</label>
+                <select id="workshop" name="workshop">
+                    <option value="scarf-dyeing">Scarf Dyeing</option>
+                    <option value="drawing">Drawing</option>
+                </select>
+                
+                <button type="submit">Register</button>
+            </form>
+            <p>Note: 1st come 1st served basis. A waiting list will be available.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please contact us at <a href="info@powerhouse.com.au">info@museum.com</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Unwind Under the Stars | Immerseum Nights. All rights reserved.</p>
+    </footer>
+</body>
+</html>
